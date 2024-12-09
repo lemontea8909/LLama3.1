@@ -19,7 +19,7 @@ The dataset should be structured as a JSON file with the following format:
 ]
 ```
 ## Directory Structure
-```json
+```
 .
 ├── train.py          # Script to configure and run training
 ├── train.sh          # Shell script to execute training
@@ -29,20 +29,20 @@ The dataset should be structured as a JSON file with the following format:
 ```
 ## For training 
 First replace the path in train.py
-```json
+```python
 dataset = "your dataset path"
 output_dir = "your output path"
 ```
 
 ## Run Training
-```json
+```python
 python train.sh
 ```
 
 ## Run Inference
 Replace the checkpoint path and user prompt
-```json
-NEW_MODEL = "your-output-dir/checkpoint-xxx"  xxx is the checkpoint iterations  please check outputdir yourself
+```python
+NEW_MODEL = "your-output-dir/checkpoint-xxx"  # xxx is the checkpoint iterations  please check outputdir yourself
 user = "your question / prompt to ask Llama"
 ```
 

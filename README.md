@@ -45,6 +45,10 @@ Replace the checkpoint path and user prompt
 NEW_MODEL = "your-output-dir/checkpoint-xxx"  # xxx is the checkpoint iterations  please check outputdir yourself
 user = "your question / prompt to ask Llama"
 ```
+And run the inference
+```python
+python inference.py
+```
 
 
 
